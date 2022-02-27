@@ -12,7 +12,12 @@ body{
     
 
 }
-hr.line{
+.fa:hover{
+    border-radius: 50%;
+    /* border: 2px solid blue; */
+
+}
+hr .line{
     border-top: 0px solid grey;
 }
 .header{
@@ -30,13 +35,17 @@ hr.line{
     padding: 1rem;
     color: white;
     font-size: medium;
+    outline: none;
+    border: none;
 }
 
 
 
 #btn{
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem; 
+    width: 3rem;
+    outline: none;
+    border: none;
 }
 
 .main{
@@ -57,7 +66,7 @@ hr.line{
 }
 .left{
     background-color: rgba(33,33,33,255);
-    width: 250px;
+    width: 15rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -81,14 +90,26 @@ hr.line{
     /* justify-content:right; */
     /* border: 1px solid blue; */
 }
+.bg{
+    /* background-color: rgba(49,49,49,255); */
+    /* color: white; */
+    /* mix-blend-mode: color; */
+    /* color:rgba(49,49,49,255) ; */
+    height: 2rem;
+    width: 2rem;
+    /* padding: 0; */
+    filter: invert(100%);
+}
 .vcard{
     width: 95%;
+   /* max-width: 10rem; */
+   max-height: 20rem;
     /* border: 1px solid red; */
     /* text-overflow: clip; */
     /* max-width: 50px; */
     text-align: center;
     /* min-height: 50px; */
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 
 }
 #vthumb img{
