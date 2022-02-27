@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Montserrat:ital,wght@0,400;1,200&family=Oswald:wght@500&family=Roboto:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: rgba(33,33,33,255);
+    
+
+}
+hr.line{
+    border-top: 0px solid grey;
+}
+.header{
+    /* text-align: center; */
+    /* margin: 0.2rem; */
+    padding: 0.5rem;
+    padding-left: 2rem;
+   
+}
+.header input{
+    width: 40rem;
+    height: 2.5rem;
+    background-color: rgba(24,24,24,255);
+    font-weight: 500;
+    padding: 1rem;
+    color: white;
+    font-size: medium;
+}
+
+
+
+#btn{
+    height: 2rem;
+    width: 2rem;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 0.5fr 3.5fr;
+    
+}
+.right{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 0.1rem;
+    border-top: 0.1px solid grey;
+    /* border-bottom: 0.5px solid grey; */
+    margin-top: 1rem;
+    padding-top: 2rem;
+    justify-items:center;
+
+}
+.left{
+    background-color: rgba(33,33,33,255);
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 1rem;
+    /* scrollbar-arrow-color: brown; */
+    /* border-bottom: px solid grey; */
+}
+.left a{
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem;
+}
+.left i{
+    margin: 0.5rem;
+}
+.right{
+    /* text-align: center; */
+    background-color: rgba(24,24,24,255);
+    color: white;
+    /* justify-content:right; */
+    /* border: 1px solid blue; */
+}
+.vcard{
+    width: 95%;
+    /* border: 1px solid red; */
+    /* text-overflow: clip; */
+    /* max-width: 50px; */
+    text-align: center;
+    /* min-height: 50px; */
+    /* border: 1px solid blue; */
+
+}
+#vthumb img{
+    width: 100%;
+}
+.vfoot{
+    /* border: 2px solid black; */
+    width: 95%;
+    /* overflow:; */
+    text-align: right;
+    /* overflow: hidden; */
+    text-overflow: clip;
+    text-align: left;
+    font-size: small;
+}
+#vtitle{
+    /* border: 2px solid blue; */
+}
+
+a:hover{
+    background-color: rgba(61,61,61,255);
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+   
+    width: 10px;
+    border-radius: 5px;
+  }
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+ .vcard:hover{
+     cursor: pointer;
+ }
