@@ -40,7 +40,7 @@ ldiv.innerHTML = `<iframe width="942" height="530" src="https://www.youtube.com/
 <h2>${title}</h2>`
 
 left.append(ldiv);
-console.log("left")
+// console.log("left")
 getdata();
 
 }
@@ -49,7 +49,7 @@ getdata();
 // console.log(channelTitle)
 
 async function getdata(){
-    let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q=${channelTitle}&type=video&myRating=like&key=AIzaSyDV4mL7oAMtNA6aIF_WM_o_VYZzrv_xKyQ`;
+    let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q=${channelTitle}&kind= youtubecommentThread&type=video&myRating=like&key=AIzaSyDV4mL7oAMtNA6aIF_WM_o_VYZzrv_xKyQ`;
     try {
         let data1 = await fetch(url);
         let res1 = await data1.json(); 
@@ -82,7 +82,7 @@ function displaydata(videos){
             //final append
             right.append(vdiv);
         });
-        console.log("right")
+        // console.log("right")
         
     }
 
@@ -98,8 +98,8 @@ function displaydata(videos){
         try {
             let data2 = await fetch(`https://random-word-api.herokuapp.com/word?number=20`);
             let res2= await data2.json(); 
-            console.log(res2)
-            console.log("yes")
+            // console.log(res2)
+            // console.log("yes")
             // displaydata(res1.items);
 
             res2.forEach(Element=>{
@@ -107,10 +107,21 @@ function displaydata(videos){
                 div.setAttribute("class" , "word");
                 div.innerText = Element;
                 // console.log(Element)
+                div.addEventListener("click" , async()=>{
+                    let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q=${Element}&type=video&myRating=like&key=AIzaSyDV4mL7oAMtNA6aIF_WM_o_VYZzrv_xKyQ`;
+                    try {
+                        let data1 = await fetch(url);
+                        let res1 = await data1.json(); 
+                        // console.log(res1.items)
+                        displaydata(res1.items);
+                    } catch (error) {
+                        console.log(error);
+                    }
+                })
                 wordh.append(div)
             })
             // right.append(wordh)
-            console.log("word")
+            // console.log("word")
 
             
         } catch (error) {

@@ -63,6 +63,10 @@ function displaydata(videos) {
     // console.log(videoId)
     let vdiv = document.createElement("div");
     vdiv.setAttribute("class", "vcard");
+    vdiv.style.pos = "relative";
+    // let div = document.createElement("div");
+    // div.setAttribute("class" , "blur");
+    
     vdiv.innerHTML = `<div id="vthumb"><img src=${url} alt=""></div>
         <div class="vfoot">
             <h3 id="vtitle">${channelTitle}</h3>
@@ -80,9 +84,16 @@ let itis;
 function myicon(){
   let left = document.querySelector(".left");
   let right = document.querySelector(".right");
+  let span = document.getElementsByTagName("span");
+  
   if(!itis){
     left.style.width = "5rem";
     right.style.width = "94vw"
+    // left.style.margin = "0rem" 
+   for(let i=0; i<span.length; i++){
+      span[i].style.fontSize = "0.8rem";
+      span[i].style.textAlign = "left";
+   }
     // left.style.
     itis = true;
   }else{

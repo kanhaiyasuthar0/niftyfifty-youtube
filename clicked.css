@@ -24,7 +24,7 @@ hr.line{
    
 }
 .header input{
-    width: 40rem;
+    width: 40vw;
     height: 2.5rem;
     background-color: rgba(24,24,24,255);
     font-weight: 500;
@@ -41,12 +41,18 @@ hr.line{
     justify-content: space-evenly;
      
 }
+#btn{
+    height: 2.5rem; 
+    width: 3rem;
+    outline: none;
+    border: none;
+}
 
 .wordh{
     /* border: 1px solid blue; */
     display: flex;
     overflow-x: hidden;
-    width:30rem ;
+    max-width: 30rem ;
     background-color: rgba(33,33,33,255);
     overflow-x: scroll;
 }
@@ -56,9 +62,10 @@ hr.line{
     border-radius: 1.5rem;
     height: 2rem;
     text-align: center;
-    
+    font-size: small;
     color: white;
-    padding-top: 0.3rem;
+    padding: 0.3rem;
+    text-transform: capitalize;
 }
 .vcard2{
     display: flex;
@@ -116,18 +123,18 @@ svg:hover{
 /* width */
 ::-webkit-scrollbar {
 
-   height: 5px; 
-    width: 5px;
-    border-radius: 5px;
+   height: 2px; 
+    width: 2px;
+    border-radius: 2px;
   }
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: rgba(136, 136, 136, 0.137); 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: rgba(136, 136, 136, 0.137); 
   }
   
   /* Handle on hover */

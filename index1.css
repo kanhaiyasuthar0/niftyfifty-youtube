@@ -12,6 +12,12 @@ body{
     
 
 }
+.logoy{
+    /* max-width: 10px; */
+    /* border: 1px solid blue; */
+    min-width: 50px;
+    /* max-width: ; */
+}
 .fa:hover{
     border-radius: 50%;
     /* border: 2px solid blue; */
@@ -28,7 +34,9 @@ hr .line{
    
 }
 .header input{
-    width: 40rem;
+    /* border: 1px solid red; */
+    width:40vw;
+    min-width: 50px;
     height: 2.5rem;
     background-color: rgba(24,24,24,255);
     font-weight: 500;
@@ -37,13 +45,15 @@ hr .line{
     font-size: medium;
     outline: none;
     border: none;
+    margin-left: 20vw;
+    
 }
 
 
 
 #btn{
-    height: 2.5rem; 
-    width: 3rem;
+    height: 2.5vw; 
+    width: 3vw;
     outline: none;
     border: none;
 }
@@ -66,12 +76,13 @@ hr .line{
 }
 .left{
     background-color: rgba(33,33,33,255);
-    width: 15rem;
+    width: 15vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
     padding: 1rem;
+    min-width: 110px;
     /* scrollbar-arrow-color: brown; */
     /* border-bottom: px solid grey; */
 }
@@ -100,6 +111,9 @@ hr .line{
     /* padding: 0; */
     filter: invert(100%);
 }
+.logoy:hover{
+    background: none;
+}
 .vcard{
     width: 95%;
    /* max-width: 10rem; */
@@ -112,8 +126,26 @@ hr .line{
     /* border: 1px solid blue; */
 
 }
+#vthumb{
+    position: relative;
+    display: flex;
+   
+
+}
+
+
 #vthumb img{
     width: 100%;
+}
+#vthumb img:hover::after{
+    content: "Play song";
+}
+
+.play{
+    position: absolute;
+    top:0;
+    left: 0;
+    
 }
 .vfoot{
     /* border: 2px solid black; */
