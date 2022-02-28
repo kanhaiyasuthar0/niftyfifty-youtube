@@ -18,14 +18,14 @@ let url;
 //when user searched for any inputs
 btn.addEventListener("click", () => {
   let input = document.getElementById("input");
-  url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q=${input.value}&type=video&key=AIzaSyCdkSUDMRM0nqFxIZpIujLEWkrtX7W8H6c`;
+  url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${input.value}&type=video&key=AIzaSyCdkSUDMRM0nqFxIZpIujLEWkrtX7W8H6c`;
   getdata(url);
 });
 
 //when localstorage id is empty;
 if (localid == null) {
   // console.log
-  url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q=javascript&type=video&key=AIzaSyCdkSUDMRM0nqFxIZpIujLEWkrtX7W8H6c`;
+  url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=javascript&type=video&key=AIzaSyCdkSUDMRM0nqFxIZpIujLEWkrtX7W8H6c`;
   getdata(url);
 }
 // else{

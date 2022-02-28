@@ -6,7 +6,7 @@ let btn = document.querySelector("#btn");
 
 btn.addEventListener("click", () => {
     let input = document.getElementById("input");
-    let url1 = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q=${input.value}&type=video&key=AIzaSyDV4mL7oAMtNA6aIF_WM_o_VYZzrv_xKyQ`;
+    let url1 = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${input.value}&type=video&key=AIzaSyDV4mL7oAMtNA6aIF_WM_o_VYZzrv_xKyQ`;
     
     
   });
